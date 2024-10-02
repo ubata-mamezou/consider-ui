@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    //   backgroundColor: { control: 'color' },
+    // backgroundColor: { control: 'color' },
   },
   args: {
     id: 'demo',
@@ -103,35 +103,35 @@ export const searchFieldText: Story = {
   },
 };
 
-export const buttonText: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'ボタンっぽく見せるテキスト',
-      },
-    },
-  },
-  args: {
-    type: 'button',
-    label: '',
-    defaultValue: '登録'
-  },
-};
+// export const buttonText: Story = {
+//   parameters: {
+//     docs: {
+//       description: {
+//         story: 'ボタンっぽく見せるテキスト',
+//       },
+//     },
+//   },
+//   args: {
+//     type: 'button',
+//     label: '',
+//     defaultValue: '登録'
+//   },
+// };
 
-export const checkBoxText: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'チェックボックス',
-      },
-    },
-  },
-  args: {
-    type: 'checkbox',
-    label: 'チェックボックス',
-    defaultValue: 'チェックボックス'
-  },
-};
+// export const checkBoxText: Story = {
+//   parameters: {
+//     docs: {
+//       description: {
+//         story: 'チェックボックス',
+//       },
+//     },
+//   },
+//   args: {
+//     type: 'checkbox',
+//     label: 'チェックボックス',
+//     defaultValue: 'チェックボックス'
+//   },
+// };
 
 export const colorPicker: Story = {
   parameters: {
@@ -240,18 +240,18 @@ export const monthText: Story = {
   },
 };
 
-export const radioText: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'ラジオボタン',
-      },
-    },
-  },
-  args: {
-    type: 'radio',
-  },
-};
+// export const radioText: Story = {
+//   parameters: {
+//     docs: {
+//       description: {
+//         story: 'ラジオボタン',
+//       },
+//     },
+//   },
+//   args: {
+//     type: 'radio',
+//   },
+// };
 
 export const rangeText: Story = {
   parameters: {
@@ -266,31 +266,31 @@ export const rangeText: Story = {
   },
 };
 
-export const resetText: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'reset',
-      },
-    },
-  },
-  args: {
-    type: 'reset',
-  },
-};
+// export const resetText: Story = {
+//   parameters: {
+//     docs: {
+//       description: {
+//         story: 'reset',
+//       },
+//     },
+//   },
+//   args: {
+//     type: 'reset',
+//   },
+// };
 
-export const submitText: Story = {
-  parameters: {
-    docs: {
-      description: {
-        story: 'submit',
-      },
-    },
-  },
-  args: {
-    type: 'submit',
-  },
-};
+// export const submitText: Story = {
+//   parameters: {
+//     docs: {
+//       description: {
+//         story: 'submit',
+//       },
+//     },
+//   },
+//   args: {
+//     type: 'submit',
+//   },
+// };
 
 export const telText: Story = {
   parameters: {

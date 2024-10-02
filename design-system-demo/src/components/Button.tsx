@@ -4,7 +4,7 @@ export type ButtonProps = {
   /** ID */
   id: string;
   /** 種類 */
-  type?: `primary` | `secondary`;
+  type?: `primary` | `secondary` | 'other';
   /** 表示名 */
   label: string;
   /** 活性/非活性 */

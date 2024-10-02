@@ -14,29 +14,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # checkout resource
       - name: Check out code
         uses: actions/checkout@v3
-
+      # node install
       - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-
+      # lib install
       - name: Install dependencies
         run: |
           cd design-system-demo
           npm ci
-      # - name: Install Node Dependencies
-      #   run: npm install
-
-      # - name: Build package
-      #   run: npm run build
-
+      # build storybook static contents
       - name: Build storybook
         run: |
           cd design-system-demo
           npm run build-storybook
-
+      # deploy 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

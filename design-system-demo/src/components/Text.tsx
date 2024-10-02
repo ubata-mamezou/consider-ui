@@ -1,5 +1,4 @@
 import { TextField as BaseText } from '@mui/material';
-import { HTMLInputTypeAttribute } from 'react';
 
 /**
  * テキストプロパティ
@@ -8,7 +7,28 @@ export type TextProps = {
   /** ID */
   id: string;
   /** 種類(default: text) */
-  type?: HTMLInputTypeAttribute;
+  type?: "text"
+  // | "button"
+  // | "checkbox"
+  | "color"
+  | "date"
+  | "datetime-local"
+  | "email"
+  | "file"
+  | "hidden"
+  | "image"
+  | "month"
+  | "number"
+  | "password"
+  // | "radio"
+  | "range"
+  // | "reset"
+  | "search"
+  // | "submit"
+  | "tel"
+  | "time"
+  | "url"
+  | "week";
   /** 表示名 */
   label?: string;
   /** 必須(default: false) */
@@ -43,22 +63,22 @@ export const Text = ({
 }: TextProps) => {
   return (
     <BaseText
-    id={id}
-    type={type}
-    variant='outlined'
-    label={label}
-    required={required}
-    disabled={disabled}
-    defaultValue={defaultValue}
-    helperText={helperText}
-    slotProps={{
-      inputLabel: {
-        // shrink: type === 'number' ? true : false,
-      },
-      input: {
-        readOnly: readOnly,
-      },
-    }}
+      id={id}
+      type={type}
+      variant='outlined'
+      label={label}
+      required={required}
+      disabled={disabled}
+      defaultValue={defaultValue}
+      helperText={helperText}
+      slotProps={{
+        inputLabel: {
+          // shrink: type === 'number' ? true : false,
+        },
+        input: {
+          readOnly: readOnly,
+        },
+      }}
       {...props}
     >
     </BaseText>
