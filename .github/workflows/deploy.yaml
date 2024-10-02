@@ -40,7 +40,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: storybook-static
+          folder: design-system-demo/storybook-static
           branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
           commit_message: Deploy Storybook
