@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: '20'
 
+      - name: show current directory
+        run: dir
       - name: change directory
         run: cd design-system-demo
       - name: show current directory
