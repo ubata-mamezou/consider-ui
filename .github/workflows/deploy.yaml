@@ -14,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: change directory
+        run: cd design-system-demo
+        
       - name: Check out code
         uses: actions/checkout@v3
 
