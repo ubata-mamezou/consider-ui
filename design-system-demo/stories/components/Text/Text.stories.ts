@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Text } from '.';
+import { Text } from '../../../src/components';
 
 // metadata
 const meta = {

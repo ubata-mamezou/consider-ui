@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Button } from '.';
+import { Button } from '../../../src/components';
 
 // metadata
 const meta = {
@@ -15,7 +15,7 @@ const meta = {
   args: {
     id: 'demo',
     label: 'ボタン表示名',
-    onClick: () => {},
+    onClick: () => {console.log('onClick event');},
   },
 } satisfies Meta<typeof Button>;
 
@@ -46,6 +46,19 @@ export const Secondary: Story = {
   },
   args: {
     type: `secondary`,
+  },
+};
+
+export const Tertiary: Story = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'ターティアリーボタン：セカンダリーボタンに比べると重要度が低いアクションを含むボタン',
+      },
+    },
+  },
+  args: {
+    type: `other`,
   },
 };
 
