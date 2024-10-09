@@ -31,6 +31,7 @@ jobs:
       - name: Build storybook
         run: |
           cd design-system-demo
+          export BUILD_ENV=preview
           npm run build-storybook
       # deploy 
       - name: Deploy to GitHub Pages
