@@ -24,15 +24,15 @@ const meta = {
     },
     leftPanelProps: {
       links: [
-        {label: 'Top', path: ''},
-        {label: 'page1', path: ''},
-        {label: 'page2', path: ''},
+        { label: 'Top', path: '' },
+        { label: 'page1', path: '' },
+        { label: 'page2', path: '' },
       ]
     },
     footerProps: {
       copyright: '© 2024 MAU(from Storybook)'
     }
-  },
+  }
 } satisfies Meta<typeof Layout>;
 
 // template
@@ -52,9 +52,29 @@ export const BasicLayout: Story = {
   },
   args: {
     children: (
-      <div>
+      <>
         メインコンテンツエリア(from Storybook)
-      </div>
+      </>
     ),
   },
+  // // storybookでレンダリングする内容
+  // render: () => (
+  //   <Layout headerProps={{
+  //     label: 'UI sample system(from Storybook)'
+  //   }}
+  //     leftPanelProps={{
+  //       links: [
+  //         { label: 'Top', path: '' },
+  //         { label: 'page1', path: '' },
+  //         { label: 'page2', path: '' },
+  //       ]
+  //     }}
+  //     footerProps={{
+  //       copyright: '© 2024 MAU(from Storybook)'
+  //     }}>
+  //     <div>
+  //       メインコンテンツエリア2(from Storybook)
+  //     </div>
+  //   </Layout>
+  // )
 };
