@@ -1,5 +1,17 @@
 import { Button as BaseButton } from '@mui/material';
 
+const styleObj = {
+  "&:hover": {
+    backgroundColor: "red"
+  },
+  "&:active": {
+    backgroundColor: "blue"
+  }
+};
+
+/**
+ * Button properties.
+ */
 export type ButtonProps = {
   /** ID */
   id: string;
@@ -13,6 +25,11 @@ export type ButtonProps = {
   onClick: () => void;
 }
 
+/**
+ * Button.
+ * @param param0 {@link ButtonProps}
+ * @returns Button
+ */
 export const Button = ({
   id,
   type = `primary`,
@@ -25,6 +42,7 @@ export const Button = ({
       id={id}
       variant={type === `primary` ? 'contained' : type === `secondary` ? `outlined` : `text`}
       disabled={disabled}
+      sx={styleObj}
       {...props}
     >
       {label}

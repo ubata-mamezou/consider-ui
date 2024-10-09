@@ -3,7 +3,7 @@ import { Text } from '../../../src/components';
 
 // metadata
 const meta = {
-  title: 'components/Text',
+  title: 'components/text',
   component: Text,
   parameters: {
     layout: 'centered',
@@ -25,10 +25,11 @@ type Story = StoryObj<typeof meta>;
 
 // story
 export const normalText: Story = {
+  name: '通常',
   parameters: {
     docs: {
       description: {
-        story: '通常のテキスト(初期値、ヘルパーテキストも併せて設定しています)',
+        story: '初期値、ヘルパーテキストも併せて設定しています',
       },
     },
   },
@@ -39,6 +40,7 @@ export const normalText: Story = {
 };
 
 export const requiredText: Story = {
+  name: '必須入力',
   parameters: {
     docs: {
       description: {
@@ -52,6 +54,7 @@ export const requiredText: Story = {
 };
 
 export const readonlyText: Story = {
+  name: '読み取り専用',
   parameters: {
     docs: {
       description: {
@@ -65,6 +68,7 @@ export const readonlyText: Story = {
 };
 
 export const passwordText: Story = {
+  name: 'パスワード',
   parameters: {
     docs: {
       description: {
@@ -78,6 +82,7 @@ export const passwordText: Story = {
 };
 
 export const numberText: Story = {
+  name: '数値入力',
   parameters: {
     docs: {
       description: {
@@ -91,6 +96,7 @@ export const numberText: Story = {
 };
 
 export const searchFieldText: Story = {
+  name: '検索キーワード入力',
   parameters: {
     docs: {
       description: {
@@ -134,6 +140,7 @@ export const searchFieldText: Story = {
 // };
 
 export const colorPicker: Story = {
+  name: 'カラーピッカー',
   parameters: {
     docs: {
       description: {
@@ -144,11 +151,12 @@ export const colorPicker: Story = {
   args: {
     type: 'color',
     label: '',
-    defaultValue: 'チェックボックス'
+    defaultValue: 'カラーピッカー'
   },
 };
 
 export const datePicker: Story = {
+  name: '日付入力',
   parameters: {
     docs: {
       description: {
@@ -162,6 +170,7 @@ export const datePicker: Story = {
 };
 
 export const dateTimePicker: Story = {
+  name: '日時入力',
   parameters: {
     docs: {
       description: {
@@ -175,6 +184,7 @@ export const dateTimePicker: Story = {
 };
 
 export const eMailText: Story = {
+  name: 'メールアドレス',
   parameters: {
     docs: {
       description: {
@@ -188,6 +198,7 @@ export const eMailText: Story = {
 };
 
 export const fileText: Story = {
+  name: 'ファイル入力',
   parameters: {
     docs: {
       description: {
@@ -197,10 +208,12 @@ export const fileText: Story = {
   },
   args: {
     type: 'file',
+    label: ''
   },
 };
 
 export const hiddenText: Story = {
+  name: '非表示',
   parameters: {
     docs: {
       description: {
@@ -215,6 +228,7 @@ export const hiddenText: Story = {
 };
 
 export const imageText: Story = {
+  name: 'イメージ',
   parameters: {
     docs: {
       description: {
@@ -228,6 +242,7 @@ export const imageText: Story = {
 };
 
 export const monthText: Story = {
+  name: '月入力',
   parameters: {
     docs: {
       description: {
@@ -237,6 +252,7 @@ export const monthText: Story = {
   },
   args: {
     type: 'month',
+    label: ''
   },
 };
 
@@ -254,6 +270,7 @@ export const monthText: Story = {
 // };
 
 export const rangeText: Story = {
+  name: 'Range',
   parameters: {
     docs: {
       description: {
@@ -293,6 +310,7 @@ export const rangeText: Story = {
 // };
 
 export const telText: Story = {
+  name: '電話番号',
   parameters: {
     docs: {
       description: {
@@ -306,6 +324,7 @@ export const telText: Story = {
 };
 
 export const timeText: Story = {
+  name: '時間入力',
   parameters: {
     docs: {
       description: {
@@ -319,6 +338,7 @@ export const timeText: Story = {
 };
 
 export const urlText: Story = {
+  name: 'URL入力',
   parameters: {
     docs: {
       description: {
@@ -332,6 +352,7 @@ export const urlText: Story = {
 };
 
 export const weekText: Story = {
+  name: '週入力',
   parameters: {
     docs: {
       description: {

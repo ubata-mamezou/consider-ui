@@ -3,7 +3,7 @@ import { Button } from '../../../src/components';
 
 // metadata
 const meta = {
-  title: 'components/Button',
+  title: 'components/button',
   component: Button,
   parameters: {
     layout: 'centered',
@@ -25,10 +25,11 @@ type Story = StoryObj<typeof meta>;
 
 // story
 export const Primary: Story = {
+  name: 'プライマリーボタン',
   parameters: {
     docs: {
       description: {
-        story: 'プライマリーボタン：次の画面へ遷移するアクションを含むボタン',
+        story: '次の画面へ遷移するアクションを含むボタン',
       },
     },
   },
@@ -37,10 +38,11 @@ export const Primary: Story = {
 };
 
 export const Secondary: Story = {
+  name: 'セカンダリーボタン',
   parameters: {
     docs: {
       description: {
-        story: 'セカンダリーボタン：プライマリーボタンに比べると重要度が低いアクションを含むボタン',
+        story: 'プライマリーボタンに比べると重要度が低いアクションを含むボタン',
       },
     },
   },
@@ -50,10 +52,11 @@ export const Secondary: Story = {
 };
 
 export const Tertiary: Story = {
+  name: 'ターシャリーボタン',
   parameters: {
     docs: {
       description: {
-        story: 'ターティアリーボタン：セカンダリーボタンに比べると重要度が低いアクションを含むボタン',
+        story: 'セカンダリーボタンに比べると重要度が低いアクションを含むボタン',
       },
     },
   },
@@ -63,6 +66,7 @@ export const Tertiary: Story = {
 };
 
 export const Disabled: Story = {
+  name: '非活性',
   parameters: {
     docs: {
       description: {
