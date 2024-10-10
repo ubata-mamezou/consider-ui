@@ -8,10 +8,10 @@ const customTheme = create({
     // ブランドカラーなど
     brandTitle: 'Storybookサンプル',
     brandUrl: '/',
-    brandImage: '/consider-ui/logo-storybook.png',
-    // brandImage: `${process.env.BUILD_ENV === 'preview' ? 
-    //   process.env.IMAGE_PATH_PREVIEW : 
-    //   process.env.IMAGE_PATH_DEV}/logo-storybook.png`,
+    // brandImage: 'logo-storybook.png',
+    brandImage: `${process.env.BUILD_ENV === 'preview' ? 
+      process.env.IMAGE_PATH_PREVIEW : 
+      process.env.IMAGE_PATH_DEV}/logo-storybook.png`,
     brandTarget: '_self',
 
     // その他のカスタマイズ
