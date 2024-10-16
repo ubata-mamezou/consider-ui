@@ -31,6 +31,8 @@ export type TextProps = {
   | "week";
   /** 表示名 */
   label?: string;
+  /** 値 */
+  value?: string;
   /** 必須(default: false) */
   required?: boolean;
   /** 活性/非活性(default: false) */
@@ -43,6 +45,8 @@ export type TextProps = {
   helperText?: string;
   /** onFocusイベント */
   onFocus?: () => void;
+  /** onChangeイベント */
+  // onChange?: (element: string) => void;
 }
 
 /**
@@ -54,11 +58,14 @@ export const Text = ({
   id,
   type = `text`,
   label = '',
+  value = '',
   required = false,
   disabled = false,
   readOnly = false,
   defaultValue = '',
   helperText = '',
+  onFocus = () => {},
+  // onChange = (element: string) => {},
   ...props
 }: TextProps) => {
   return (
@@ -67,6 +74,7 @@ export const Text = ({
       type={type}
       variant='outlined'
       label={label}
+      value={value}
       required={required}
       disabled={disabled}
       defaultValue={defaultValue}
@@ -79,6 +87,8 @@ export const Text = ({
           readOnly: readOnly,
         },
       }}
+      onFocus={onFocus}
+      // onChange={onChange}
       {...props}
     >
     </BaseText>

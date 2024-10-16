@@ -1,7 +1,39 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  //XXX: ファイルを読み込ませると正常にビルドできないので読み込みを抑止して、当ファイルに設定を書きこみ
+  // "files": [],
+  // "references": [
+  //   {
+  //     "path": "./tsconfig.app.json"
+  //   },
+  //   {
+  //     "path": "./tsconfig.node.json"
+  //   }
+  // ],
+  "compilerOptions": {
+    "declaration": true, // 型定義ファイルを生成
+    "declarationMap": true,
+    "declarationDir": "dist", // 型定義ファイルを出力するディレクトリを指定
+    "emitDeclarationOnly": true, // JSファイルを生成せずに型定義ファイルのみを出力
+    "outDir": "./dist", // 出力先
+
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "stories", "docs"],
 }

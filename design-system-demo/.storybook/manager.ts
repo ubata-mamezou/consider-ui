@@ -8,6 +8,7 @@ const customTheme = create({
     // ブランドカラーなど
     brandTitle: 'Storybookサンプル',
     brandUrl: '/',
+    //FIXME: 環境変数の読み込みがうまくいっていないので、暫定的にハードコード
     brandImage: `${process.env.IMAGE_PATH_PREVIEW}logo-storybook.png`,
     // brandImage: `${process.env['BUILD_ENV'] === 'preview' ? 
     //   process.env.IMAGE_PATH_PREVIEW : 

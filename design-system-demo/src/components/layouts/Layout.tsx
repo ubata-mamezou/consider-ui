@@ -1,9 +1,9 @@
 import { AppBar, Box, Container, createTheme, CssBaseline, Drawer, ThemeProvider, Toolbar } from '@mui/material';
 import { orange } from '@mui/material/colors';
 import { ReactNode } from 'react';
-import { Footer, FooterProps } from '../Footer';
-import { Header, HeaderProps } from '../Header';
-import { LeftPanel, LeftPanelProps } from '../LeftPanel';
+import { Footer, FooterProps } from './Footer';
+import { Header, HeaderProps } from './Header';
+import { LeftPanel, LeftPanelProps } from './LeftPanel';
 
 const drawerWidth = 240;
 

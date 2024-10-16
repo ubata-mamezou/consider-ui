@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/pages/top.tsx","./src/pages/index.ts","./src/pages/terms/detail/showtermdetail.tsx","./src/pages/terms/edit/editterm.tsx","./src/pages/terms/list/showtermlist.tsx","./src/pages/terms/register/registerterm.tsx","./src/route/routeconfig.tsx"],"errors":true,"version":"5.6.3"}
