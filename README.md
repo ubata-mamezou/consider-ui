@@ -16,6 +16,7 @@ UIの検証リポジトリです。
 
 * :file_folder:design-system-demo: [デザインシステム](./design-system-demo/README.md)
 * :file_folder:glossary: [UIコンポーネント利用アプリ](./glossary/README.md)
+* :file_folder:mock-server: [モックサーバー](./mock-server/README.md)
 
 ## 環境構築
 
