@@ -3,17 +3,15 @@ import { Button } from '../../../src/components';
 
 // metadata
 const meta = {
-  title: 'components/button',
+  title: 'components/ui/button',
   component: Button,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {
-    //  backgroundColor: { control: 'color' },
   },
   args: {
-    id: 'demo',
     label: 'ボタン表示名',
     onClick: () => {console.log('onClick event');},
   },

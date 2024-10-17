@@ -3,19 +3,17 @@ import { Text } from '../../../src/components';
 
 // metadata
 const meta = {
-  title: 'components/text',
+  title: 'components/ui/text',
   component: Text,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {
-    // backgroundColor: { control: 'color' },
   },
   args: {
-    id: 'demo',
     label: 'テキスト表示名',
-    onFocus: () => { },
+    // onFocus: () => { },
   },
 } satisfies Meta<typeof Text>;
 
@@ -24,7 +22,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // story
-export const normalText: Story = {
+export const basicText: Story = {
   name: '通常',
   parameters: {
     docs: {
