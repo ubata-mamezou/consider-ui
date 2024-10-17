@@ -8,11 +8,11 @@ import EditTerm from "../pages/terms/edit/EditTerm";
 const RouteConfig = () => {
   return (
     <Routes>
-      <Route path='/' element={<Top />} />
-      <Route path="/terms/list" element={<ShowTermList />} />
-      <Route path="/terms/register" element={<RegisterTerm />} />
-      <Route path="/terms/:id/detail" element={<ShowTermDetail />} />
-      <Route path="/terms/:id/edit" element={<EditTerm />} />
+      <Route key="top" path='/' element={<Top />} />
+      <Route key="terms/list" path="/terms/list" element={<ShowTermList />} />
+      <Route key="terms/register" path="/terms/register" element={<RegisterTerm />} />
+      <Route key="terms/detail" path="/terms/:id/detail" element={<ShowTermDetail />} />
+      <Route key="terms/edit" path="/terms/:id/edit" element={<EditTerm />} />
     </Routes>
   );
 };
