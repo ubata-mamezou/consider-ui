@@ -1,0 +1,39 @@
+### env
+@termApiHost = http://localhost:19000/term-service
+
+### term api
+### get list
+GET {{termApiHost}}/terms HTTP/1.1
+
+### get
+GET {{termApiHost}}/terms/1 HTTP/1.1
+
+### save
+# @name saveTerm
+POST {{termApiHost}}/terms HTTP/1.1
+Content-Type: application/json
+
+{
+  "nameJp": "クラウド",
+  "nameEn": "Cloud",
+  "shortName": "",
+  "description": ""
+}
+
+### cache save result
+@termId = {{saveTerm.response.body.$.id}}
+
+### update
+PUT {{termApiHost}}/terms/{{termId}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "nameJp": "クラウド",
+  "nameEn": "Cloud",
+  "shortName": "",
+  "description": "更新しました"
+}
+
+### delete
+DELETE {{termApiHost}}/terms/{{termId}} HTTP/1.1
+Content-Type: application/json

@@ -1,0 +1,4 @@
+{
+  "/term-service/terms": "/terms",
+  "/term-service/terms/:term_id": "/terms/:term_id"
+}

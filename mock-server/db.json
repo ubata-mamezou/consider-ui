@@ -1,0 +1,48 @@
+{
+  "terms": [
+    {
+      "id": "1",
+      "nameJp": "サーバー",
+      "nameEn": "Server",
+      "shortName": "サーバ",
+      "description": ""
+    },
+    {
+      "id": "2",
+      "nameJp": "データベース",
+      "nameEn": "Database",
+      "shortName": "DB",
+      "description": "ｈ"
+    },
+    {
+      "id": "3",
+      "nameJp": "アプリケーション",
+      "nameEn": "Application",
+      "shortName": "アプリ, App",
+      "description": ""
+    },
+    {
+      "nameJp": "クラウド",
+      "nameEn": "Cloud",
+      "shortName": "",
+      "description": "",
+      "id": "oRb7l61"
+    },
+    {
+      "id": "7WJfRA-",
+      "version": 0,
+      "nameJp": "ｚｚｚ",
+      "nameEn": "",
+      "shortName": "",
+      "description": ""
+    },
+    {
+      "id": "kEKxdGt",
+      "version": 0,
+      "nameJp": "ｚｚｚ",
+      "nameEn": "ｃ",
+      "shortName": "",
+      "description": ""
+    }
+  ]
+}
