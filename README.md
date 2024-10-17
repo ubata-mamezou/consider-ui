@@ -14,62 +14,21 @@ UIの検証リポジトリです。
 
 ## アプリ構成
 
-* :file_folder:design-system-demo: デザインシステム
-  コンポーネントライブラリを定義しているアプリ
-* :file_folder:glossary: アプリ
-  デザインシステムで定義したコンポネントライブラリを使用したアプリ
-
+* :file_folder:design-system-demo: [デザインシステム](./design-system-demo/README.md)
+* :file_folder:glossary: [UIコンポーネント利用アプリ](./glossary/README.md)
 
 ## 環境構築
 
-当リポジトリのアプリ、Storybookを開発/動作させる環境構築手順は以下の通りです。  
-node, npmがインストールされていることを前提とします。
-
-```sh
-cd design-system-demo
-npm install
-cd ..
-
-cd glossary
-npm install
-cd ..
-```
+デザインシステムの確認のみであれば、デザインシステムの環境構築のみ。  
+デザインシステムとそれを利用したアプリを確認する場合は、デザインシステムとアプリの環境構築が必要です。  
+手順はそれぞれのREADME.mdを参照してください。
 
 ## 起動
 
-アプリ、Storybookを起動する手順は以下の通りです。
+デザインシステムの確認は、デザインシステムの起動が必要です。  
+デザインシステムで定義したUIコンポーネントを利用したアプリを確認する場合は、アプリの起動が必要です。  
+手順はそれぞれのREADME.mdを参照してください。
 
-* デザインシステム（Storybook）
-```sh
-# design-system-demoフォルダで実行
-npm run storybook
-```
+## ビルド
 
-* アプリ
-```sh
-# glossaryフォルダで実行
-npm run dev
-```
-
-## ビルド（静的コンテンツの生成）
-
-アプリ、Storybookの静的コンテンツを生成する手順は以下の通りです。
-
-* デザインシステム（Storybook）
-```sh
-# design-system-demoフォルダで実行
-npm run build-storybook
-```
-
-* デザインシステム（コンポーネントライブラリ）
-```sh
-# design-system-demoフォルダで実行
-npm run build
-```
-
-* アプリケーション
-```sh
-# glossaryフォルダで実行
-npm run build
-```
-
+手順はそれぞれのREADME.mdを参照してください。
