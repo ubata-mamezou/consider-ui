@@ -11,8 +11,7 @@ function App() {
       leftPanelProps={{
         links: [
           { label: 'Top', path: '/' },
-          { label: '用語一覧', path: '/terms/list' },
-          { label: '用語登録', path: '/terms/register' },
+          { label: '用語集', path: '/terms/list' },
         ]
       }}
       footerProps={{
