@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Layout from '../../../src/components/layouts/Layout';
+import {Layout} from '../../../src/components';
 
 // metadata
 const meta = {
-  title: 'components/layout',
+  title: 'components/layouts/layout',
   component: Layout,
   parameters: {
     layout: 'centered',
@@ -52,29 +52,9 @@ export const BasicLayout: Story = {
   },
   args: {
     children: (
-      <>
+      <div>
         メインコンテンツエリア(from Storybook)
-      </>
+      </div>
     ),
   },
-  // // storybookでレンダリングする内容
-  // render: () => (
-  //   <Layout headerProps={{
-  //     label: 'UI sample system(from Storybook)'
-  //   }}
-  //     leftPanelProps={{
-  //       links: [
-  //         { label: 'Top', path: '' },
-  //         { label: 'page1', path: '' },
-  //         { label: 'page2', path: '' },
-  //       ]
-  //     }}
-  //     footerProps={{
-  //       copyright: '© 2024 MAU(from Storybook)'
-  //     }}>
-  //     <div>
-  //       メインコンテンツエリア2(from Storybook)
-  //     </div>
-  //   </Layout>
-  // )
 };
