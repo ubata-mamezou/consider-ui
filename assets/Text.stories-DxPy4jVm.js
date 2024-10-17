@@ -1,4 +1,4 @@
-import{T as ke}from"./Text-B9RQBWM8.js";import"./Layout-m-Ji6Tj3.js";import"./jsx-runtime-DWbWqHZ-.js";import"./index-l2PZgWEW.js";import"./assertThisInitialized-BSDNMsTW.js";import"./index-BtTJd_qj.js";const Ve={title:"components/text",component:ke,parameters:{layout:"centered"},tags:["autodocs"],argTypes:{},args:{id:"demo",label:"テキスト表示名",onFocus:()=>{}}},e={name:"通常",parameters:{docs:{description:{story:"初期値、ヘルパーテキストも併せて設定しています"}}},args:{defaultValue:"テキスト初期値",helperText:"テキストヘルパーテキスト"}},r={name:"必須入力",parameters:{docs:{description:{story:"必須入力テキスト"}}},args:{required:!0}},s={name:"読み取り専用",parameters:{docs:{description:{story:"読み取り専用テキスト"}}},args:{readOnly:!0}},a={name:"パスワード",parameters:{docs:{description:{story:"パスワード入力テキスト"}}},args:{type:"password"}},n={name:"数値入力",parameters:{docs:{description:{story:"数値入力テキスト"}}},args:{type:"number"}},t={name:"検索キーワード入力",parameters:{docs:{description:{story:"検索キーワード入力テキスト"}}},args:{type:"search"}},o={name:"カラーピッカー",parameters:{docs:{description:{story:"カラーピッカー"}}},args:{type:"color",label:"",defaultValue:"カラーピッカー"}},c={name:"日付入力",parameters:{docs:{description:{story:"日付入力テキスト"}}},args:{type:"date"}},p={name:"日時入力",parameters:{docs:{description:{story:"日時入力テキスト"}}},args:{type:"datetime-local"}},m={name:"メールアドレス",parameters:{docs:{description:{story:"メールアドレス入力テキスト"}}},args:{type:"email"}},d={name:"ファイル入力",parameters:{docs:{description:{story:"ファイル入力テキスト"}}},args:{type:"file",label:""}},i={name:"非表示",parameters:{docs:{description:{story:"非表示テキスト"}}},args:{type:"hidden",label:""}},u={name:"イメージ",parameters:{docs:{description:{story:"image"}}},args:{type:"image"}},l={name:"月入力",parameters:{docs:{description:{story:"月入力テキスト"}}},args:{type:"month",label:""}},y={name:"Range",parameters:{docs:{description:{story:"range"}}},args:{type:"range"}},g={name:"電話番号",parameters:{docs:{description:{story:"電話番号入力テキスト"}}},args:{type:"tel"}},T={name:"時間入力",parameters:{docs:{description:{story:"時間入力テキスト"}}},args:{type:"time"}},x={name:"URL入力",parameters:{docs:{description:{story:"URL入力テキスト"}}},args:{type:"url"}},S={name:"週入力",parameters:{docs:{description:{story:"週入力テキスト"}}},args:{type:"week"}};var h,b,f;e.parameters={...e.parameters,docs:{...(h=e.parameters)==null?void 0:h.docs,source:{originalSource:`{
+import{T as ke}from"./Layout-DfGkbYfY.js";import"./jsx-runtime-DWbWqHZ-.js";import"./index-l2PZgWEW.js";import"./assertThisInitialized-BSDNMsTW.js";import"./index-BtTJd_qj.js";const Ue={title:"components/ui/text",component:ke,parameters:{layout:"centered"},tags:["autodocs"],argTypes:{},args:{label:"テキスト表示名"}},e={name:"通常",parameters:{docs:{description:{story:"初期値、ヘルパーテキストも併せて設定しています"}}},args:{defaultValue:"テキスト初期値",helperText:"テキストヘルパーテキスト"}},r={name:"必須入力",parameters:{docs:{description:{story:"必須入力テキスト"}}},args:{required:!0}},s={name:"読み取り専用",parameters:{docs:{description:{story:"読み取り専用テキスト"}}},args:{readOnly:!0}},a={name:"パスワード",parameters:{docs:{description:{story:"パスワード入力テキスト"}}},args:{type:"password"}},n={name:"数値入力",parameters:{docs:{description:{story:"数値入力テキスト"}}},args:{type:"number"}},t={name:"検索キーワード入力",parameters:{docs:{description:{story:"検索キーワード入力テキスト"}}},args:{type:"search"}},o={name:"カラーピッカー",parameters:{docs:{description:{story:"カラーピッカー"}}},args:{type:"color",label:"",defaultValue:"カラーピッカー"}},c={name:"日付入力",parameters:{docs:{description:{story:"日付入力テキスト"}}},args:{type:"date"}},p={name:"日時入力",parameters:{docs:{description:{story:"日時入力テキスト"}}},args:{type:"datetime-local"}},m={name:"メールアドレス",parameters:{docs:{description:{story:"メールアドレス入力テキスト"}}},args:{type:"email"}},d={name:"ファイル入力",parameters:{docs:{description:{story:"ファイル入力テキスト"}}},args:{type:"file",label:""}},i={name:"非表示",parameters:{docs:{description:{story:"非表示テキスト"}}},args:{type:"hidden",label:""}},u={name:"イメージ",parameters:{docs:{description:{story:"image"}}},args:{type:"image"}},l={name:"月入力",parameters:{docs:{description:{story:"月入力テキスト"}}},args:{type:"month",label:""}},y={name:"Range",parameters:{docs:{description:{story:"range"}}},args:{type:"range"}},g={name:"電話番号",parameters:{docs:{description:{story:"電話番号入力テキスト"}}},args:{type:"tel"}},T={name:"時間入力",parameters:{docs:{description:{story:"時間入力テキスト"}}},args:{type:"time"}},x={name:"URL入力",parameters:{docs:{description:{story:"URL入力テキスト"}}},args:{type:"url"}},S={name:"週入力",parameters:{docs:{description:{story:"週入力テキスト"}}},args:{type:"week"}};var b,h,f;e.parameters={...e.parameters,docs:{...(b=e.parameters)==null?void 0:b.docs,source:{originalSource:`{
   name: '通常',
   parameters: {
     docs: {
@@ -11,7 +11,7 @@ import{T as ke}from"./Text-B9RQBWM8.js";import"./Layout-m-Ji6Tj3.js";import"./js
     defaultValue: 'テキスト初期値',
     helperText: 'テキストヘルパーテキスト'
   }
-}`,...(f=(b=e.parameters)==null?void 0:b.docs)==null?void 0:f.source}}};var k,w,P;r.parameters={...r.parameters,docs:{...(k=r.parameters)==null?void 0:k.docs,source:{originalSource:`{
+}`,...(f=(h=e.parameters)==null?void 0:h.docs)==null?void 0:f.source}}};var k,w,P;r.parameters={...r.parameters,docs:{...(k=r.parameters)==null?void 0:k.docs,source:{originalSource:`{
   name: '必須入力',
   parameters: {
     docs: {
@@ -35,7 +35,7 @@ import{T as ke}from"./Text-B9RQBWM8.js";import"./Layout-m-Ji6Tj3.js";import"./js
   args: {
     readOnly: true
   }
-}`,...(L=(q=s.parameters)==null?void 0:q.docs)==null?void 0:L.source}}};var U,V,F;a.parameters={...a.parameters,docs:{...(U=a.parameters)==null?void 0:U.docs,source:{originalSource:`{
+}`,...(L=(q=s.parameters)==null?void 0:q.docs)==null?void 0:L.source}}};var U,V,O;a.parameters={...a.parameters,docs:{...(U=a.parameters)==null?void 0:U.docs,source:{originalSource:`{
   name: 'パスワード',
   parameters: {
     docs: {
@@ -47,7 +47,7 @@ import{T as ke}from"./Text-B9RQBWM8.js";import"./Layout-m-Ji6Tj3.js";import"./js
   args: {
     type: 'password'
   }
-}`,...(F=(V=a.parameters)==null?void 0:V.docs)==null?void 0:F.source}}};var O,M,_;n.parameters={...n.parameters,docs:{...(O=n.parameters)==null?void 0:O.docs,source:{originalSource:`{
+}`,...(O=(V=a.parameters)==null?void 0:V.docs)==null?void 0:O.source}}};var F,M,_;n.parameters={...n.parameters,docs:{...(F=n.parameters)==null?void 0:F.docs,source:{originalSource:`{
   name: '数値入力',
   parameters: {
     docs: {
@@ -220,7 +220,7 @@ import{T as ke}from"./Text-B9RQBWM8.js";import"./Layout-m-Ji6Tj3.js";import"./js
   args: {
     type: 'url'
   }
-}`,...(Se=(xe=x.parameters)==null?void 0:xe.docs)==null?void 0:Se.source}}};var he,be,fe;S.parameters={...S.parameters,docs:{...(he=S.parameters)==null?void 0:he.docs,source:{originalSource:`{
+}`,...(Se=(xe=x.parameters)==null?void 0:xe.docs)==null?void 0:Se.source}}};var be,he,fe;S.parameters={...S.parameters,docs:{...(be=S.parameters)==null?void 0:be.docs,source:{originalSource:`{
   name: '週入力',
   parameters: {
     docs: {
@@ -232,4 +232,4 @@ import{T as ke}from"./Text-B9RQBWM8.js";import"./Layout-m-Ji6Tj3.js";import"./js
   args: {
     type: 'week'
   }
-}`,...(fe=(be=S.parameters)==null?void 0:be.docs)==null?void 0:fe.source}}};const Fe=["normalText","requiredText","readonlyText","passwordText","numberText","searchFieldText","colorPicker","datePicker","dateTimePicker","eMailText","fileText","hiddenText","imageText","monthText","rangeText","telText","timeText","urlText","weekText"];export{Fe as __namedExportsOrder,o as colorPicker,c as datePicker,p as dateTimePicker,Ve as default,m as eMailText,d as fileText,i as hiddenText,u as imageText,l as monthText,e as normalText,n as numberText,a as passwordText,y as rangeText,s as readonlyText,r as requiredText,t as searchFieldText,g as telText,T as timeText,x as urlText,S as weekText};
+}`,...(fe=(he=S.parameters)==null?void 0:he.docs)==null?void 0:fe.source}}};const Ve=["basicText","requiredText","readonlyText","passwordText","numberText","searchFieldText","colorPicker","datePicker","dateTimePicker","eMailText","fileText","hiddenText","imageText","monthText","rangeText","telText","timeText","urlText","weekText"];export{Ve as __namedExportsOrder,e as basicText,o as colorPicker,c as datePicker,p as dateTimePicker,Ue as default,m as eMailText,d as fileText,i as hiddenText,u as imageText,l as monthText,n as numberText,a as passwordText,y as rangeText,s as readonlyText,r as requiredText,t as searchFieldText,g as telText,T as timeText,x as urlText,S as weekText};

@@ -2,8 +2,10 @@
  * Button properties.
  */
 export type ButtonProps = {
-    /** ID */
-    id: string;
+    /** ID(default: txt+日時から生成した文字列) */
+    id?: string;
+    /** Key(default: IDと同じ) */
+    key?: string;
     /** 種類 */
     type?: `primary` | `secondary` | 'other';
     /** 表示名 */
@@ -18,5 +20,5 @@ export type ButtonProps = {
  * @param param0 {@link ButtonProps}
  * @returns Button
  */
-export declare const Button: ({ id, type, label, disabled, ...props }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
+export declare const Button: ({ id, key, type, label, disabled, ...props }: ButtonProps) => import("react/jsx-runtime").JSX.Element;
 //# sourceMappingURL=Button.d.ts.map
