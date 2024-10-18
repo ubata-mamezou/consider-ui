@@ -1,9 +1,9 @@
-import { Typography } from '@mui/material';
+import { PageTitle } from '@/components';
 import React from 'react';
 
 const Top: React.FC = () => (
   <div>
-    <Typography variant="h4">    トップページ  </Typography>
+      <PageTitle title='トップページ'/>
     マイページ的なページ
   </div>
 );

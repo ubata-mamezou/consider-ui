@@ -1,15 +1,11 @@
+import { PageTitle } from '@/components';
 import { getTerms, Term } from '@/features/term';
-import { Table, TableBody, TableCell, TableHead, TableRow, Typography } from '@mui/material';
+import { Table, TableBody, TableCell, TableHead, TableRow } from '@mui/material';
 import { Button } from 'mau-ds-ui';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const SearchTerm: React.FC = () => {
-  // const [terms, setTerms] = useState<Term[]>([
-  //   { id: 1, nameJp: "サーバー", nameEn: "server", shortName: "サーバ", description: "" },
-  //   { id: 2, nameJp: "データベース", nameEn: "database", shortName: "DB", description: "" },
-  //   { id: 3, nameJp: "アプリケーション", nameEn: "application", shortName: "アプリ, app", description: "" },
-  // ]);
   const [terms, setTerms] = useState<Term[]>([]);
   const navigate = useNavigate();
 
@@ -27,7 +23,8 @@ const SearchTerm: React.FC = () => {
 
   return (
     <div>
-      <Typography variant="h4">用語検索画面</Typography>
+      {/* <Typography variant="h4">用語検索画面</Typography> */}
+      <PageTitle title='用語一覧'/>
       <Table>
         <TableHead>
           <TableRow>
