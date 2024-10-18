@@ -31,7 +31,7 @@ npm run build
 
 ## 起動
 
-起動手順は以下の通りです。
+下記のコマンドを実行して、[ここ](http://localhost:6006/)にアクセスできれば起動完了です。
 
 ```sh
 npm run storybook

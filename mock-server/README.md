@@ -46,7 +46,7 @@ npm install
 
 ## 起動
 
-起動手順は以下の通りです。
+下記のコマンドを実行して、[ここ](http://localhost:19000/)にアクセスできれば起動完了です。
 
 ```sh
 npm run json-server
