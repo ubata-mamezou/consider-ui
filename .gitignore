@@ -1,7 +1,12 @@
 design-system-demo/storybook-static
+mock-server/node_modules
 
 #temp
 design-system-demo/src/components/layouts/VariableLayout.tsx
 design-system-demo/src/config/ButtonTheme.ts
 design-system-demo/src/config/CustomTheme.ts
 design-system-demo/.storybook/theme.ts
+design-system-demo/src/components/layouts/ListView.tsx
+glossary/src/features/term/components/DeleteTermButton.tsx
+glossary/src/features/term/components/DeleteTermDialog.tsx
+design-system-demo/src/components/layouts/UnitView.tsx

@@ -7,6 +7,6 @@ export const BackwardButton: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <Button id='btn-back' label='戻る' type="secondary" onClick={() => navigate(-1)} />
+    <Button key='btnBack' label='戻る' type="secondary" onClick={() => navigate(-1)} />
   );
 };

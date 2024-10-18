@@ -1,6 +1,9 @@
-export type Term = {
+export type TermKey = {
   id: string;
   version: number;
+}
+
+export type Term = TermKey & {
   nameJp: string;
   nameEn: string;
   shortName: string;

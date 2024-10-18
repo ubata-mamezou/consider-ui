@@ -34,7 +34,7 @@ const EditTerm: React.FC = () => {
       <TermParts term={term} onChangeAttribute={(field: string, value: string) => {
         setTerm((term) => ({...term, [field]: value}));
       }}/>
-       <Button id='btnRegister' key="btnRegister" label='登録' onClick={() => { handleSave() }} />
+       <Button key="btnSave" label='登録' onClick={() => { handleSave() }} />
       <BackwardButton />
     </div>
 

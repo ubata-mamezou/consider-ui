@@ -32,15 +32,23 @@
       "id": "7WJfRA-",
       "version": 0,
       "nameJp": "ｚｚｚ",
-      "nameEn": "",
+      "nameEn": "ｃ",
       "shortName": "",
       "description": ""
     },
     {
-      "id": "kEKxdGt",
+      "id": "gh6JLn9",
       "version": 0,
-      "nameJp": "ｚｚｚ",
-      "nameEn": "ｃ",
+      "nameJp": "わめい",
+      "nameEn": "english name",
+      "shortName": "わ",
+      "description": "説明だよ"
+    },
+    {
+      "id": "JE6dBt8",
+      "version": 0,
+      "nameJp": "わめい",
+      "nameEn": "",
       "shortName": "",
       "description": ""
     }

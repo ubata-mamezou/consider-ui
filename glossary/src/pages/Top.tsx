@@ -3,7 +3,7 @@ import React from 'react';
 
 const Top: React.FC = () => (
   <div>
-      <PageTitle title='トップページ'/>
+    <PageTitle title='トップページ' />
     マイページ的なページ
   </div>
 );
