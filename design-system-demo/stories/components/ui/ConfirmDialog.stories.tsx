@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Button, ConfirmDialog } from '../../../src/components';
+import { ConfirmDialog } from '../../../src/components';
 
 // metadata
 const meta = {
@@ -19,8 +19,6 @@ const meta = {
     onClickCancel: () => console.log('onClick cancel button'),
     openDialogCondition: true,
     onCloseDialog: () => console.log('close dialog'),
-    // label: 'ボタン表示名',
-    // onClick: () => {console.log('onClick event');},
   },
 } satisfies Meta<typeof ConfirmDialog>;
 
