@@ -1,15 +1,10 @@
 import { TextField as BaseText } from '@mui/material';
 import { ChangeEvent } from 'react';
-// import { generateUk as generateUk4DateTime } from '../../utils';
 
 /**
  * テキストプロパティ
  */
 export type TextProps = {
-  /** ID(default: txt+日時から生成した文字列) */
-  // id?: string;
-  /** Key(default: txt+日時から生成した文字列) */
-  // key?: string;
   /** 種類(default: text) */
   type?: "text"
   // | "button"
@@ -47,8 +42,6 @@ export type TextProps = {
   defaultValue?: string;
   /** ヘルプテキスト(default: blank) */
   helperText?: string;
-  /** onFocusイベント */
-  // onFocus?: () => void;
   /** onChangeイベント */
   onChange?:  (event: ChangeEvent<HTMLInputElement>) => void;
 }
@@ -59,8 +52,6 @@ export type TextProps = {
  * @returns テキスト
  */
 export const Text = ({
-  // id,
-  // key,
   type = `text`,
   label,
   value,
@@ -69,16 +60,11 @@ export const Text = ({
   readOnly = false,
   defaultValue,
   helperText,
-  // onFocus,
   onChange,
   ...props
 }: TextProps) => {
-  // const defaultUk = `txt${generateUk4DateTime()}`;
-
   return (
     <BaseText
-      // id={id !== undefined ? id : defaultUk}
-      // key={key !== undefined ? key : defaultUk}
       type={type}
       variant='outlined'
       {...(label !== undefined && { label })}
@@ -95,7 +81,6 @@ export const Text = ({
           readOnly: readOnly,
         },
       }}
-      // onFocus={onFocus}
       onChange={onChange}
       {...props}
     >

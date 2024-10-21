@@ -11,7 +11,7 @@ export type ConfirmDialogProps = {
   onCloseDialog: () => void;
 };
 
-export const ConfirmDialog: React.FC<ConfirmDialogProps> = ({
+export const ConfirmDialog = ({
   title,
   contentText,
   executeKey,
@@ -19,7 +19,7 @@ export const ConfirmDialog: React.FC<ConfirmDialogProps> = ({
   onClickCancel,
   openDialogCondition,
   onCloseDialog
-}) => {
+}: ConfirmDialogProps) => {
 
   const handleExecute = () => {
     onClickExecute(executeKey.id, executeKey.version);

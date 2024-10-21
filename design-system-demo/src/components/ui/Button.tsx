@@ -1,5 +1,4 @@
 import { Button as BaseButton } from '@mui/material';
-// import { generateUk as generateUk4DateTime } from '../../utils';
 
 const styleObj = {
   "&:hover": {
@@ -14,10 +13,6 @@ const styleObj = {
  * Button properties.
  */
 export type ButtonProps = {
-  /** ID(default: txt+日時から生成した文字列) */
-  // id?: string;
-  /** Key(default: IDと同じ) */
-  // key?: string;
   /** 種類 */
   type?: `primary` | `secondary` | 'other';
   /** 表示名 */
@@ -34,19 +29,13 @@ export type ButtonProps = {
  * @returns Button
  */
 export const Button = ({
-  // id,
-  // key,
   type = `primary`,
   label,
   disabled = false,
   ...props
 }: ButtonProps) => {
-  // const defaultUk = `btn${generateUk4DateTime()}`;
-
   return (
     <BaseButton
-      // id={id !== undefined ? id : defaultUk}
-      // key={key !== undefined ? key : defaultUk}
       variant={type === `primary` ? 'contained' : type === `secondary` ? `outlined` : `text`}
       disabled={disabled}
       sx={styleObj}
