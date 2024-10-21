@@ -2,6 +2,10 @@
 
 UIの検証リポジトリです。
 
+* デザインシステム相当の大枠だけwiki作成
+* デザインシステム#コンポーネントライブラリを作成し、Pagesで公開
+* コンポーネントライブラリを利用したアプリを作成し、UIを構成
+
 ## アプリ構成
 
 * :file_folder:design-system-demo: [デザインシステム](./design-system-demo/README.md)
