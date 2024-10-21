@@ -57,17 +57,6 @@ const ShowTermList: React.FC = () => {
       </Table>
       <Button type='secondary' label='新規登録' onClick={() => navigate(`/terms/register`)}/>
 
-      {/* <Dialog open={deleteKey !== null} onClose={() => setDeleteKey(null)}>
-        <DialogTitle>削除確認</DialogTitle>
-        <DialogContent>
-          <DialogContentText>削除してよろしいですか？（ID:{deleteKey !== null ? deleteKey.id : ''}）</DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button type='primary' label='いいえ' onClick={() => initCurrentKey()}/>
-          <Button type='secondary' label='はい' onClick={() => deleteKey && handleDelete(deleteKey)}/>
-        </DialogActions>
-      </Dialog> */}
-
       <DeleteTermDialog
         deleteKey={currentKey}
         onClickExecuteDeleteAfterProcess={handleExecuteDeleteAfterProcess}
