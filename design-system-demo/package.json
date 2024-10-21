@@ -35,6 +35,8 @@
     "@mui/styled-engine-sc": "^6.1.1",
     "@storybook/addon-actions": "^8.3.6",
     "@storybook/addon-docs": "^8.3.4",
+    "@storybook/jest": "^0.2.2",
+    "@storybook/testing-library": "^0.2.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
@@ -48,6 +50,7 @@
     "@storybook/addon-interactions": "^8.3.4",
     "@storybook/addon-links": "^8.3.4",
     "@storybook/addon-onboarding": "^8.3.4",
+    "@storybook/addon-storyshots": "^7.6.20",
     "@storybook/blocks": "^8.3.4",
     "@storybook/manager-api": "^8.3.4",
     "@storybook/react": "^8.3.4",
@@ -75,5 +78,10 @@
   "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
+  },
+  "transform": {
+    "^.+\\.(ts|html)$": "ts-jest",
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.stories\\.[jt]sx?$": "@storybook/addon-storyshots/injectFileName"
   }
 }
