@@ -3,8 +3,6 @@ import { ChangeEvent } from '../../../node_modules/react';
  * テキストプロパティ
  */
 export type TextProps = {
-    /** ID(default: txt+日時から生成した文字列) */
-    /** Key(default: txt+日時から生成した文字列) */
     /** 種類(default: text) */
     type?: "text" | "color" | "date" | "datetime-local" | "email" | "file" | "hidden" | "image" | "month" | "number" | "password" | "range" | "search" | "tel" | "time" | "url" | "week";
     /** 表示名 */
@@ -21,7 +19,6 @@ export type TextProps = {
     defaultValue?: string;
     /** ヘルプテキスト(default: blank) */
     helperText?: string;
-    /** onFocusイベント */
     /** onChangeイベント */
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 };

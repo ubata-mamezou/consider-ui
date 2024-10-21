@@ -2,8 +2,6 @@
  * Button properties.
  */
 export type ButtonProps = {
-    /** ID(default: txt+日時から生成した文字列) */
-    /** Key(default: IDと同じ) */
     /** 種類 */
     type?: `primary` | `secondary` | 'other';
     /** 表示名 */
