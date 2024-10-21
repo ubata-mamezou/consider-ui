@@ -11,6 +11,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
+    //XXX: 空行がないとエラーになってしまうため、コメントを書いて回避
   },
   args: {
     label: 'ボタン表示名',
