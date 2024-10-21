@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Button } from '../../../src/components';
+import { action } from '@storybook/addon-actions';
 
 // metadata
 const meta = {
@@ -13,7 +14,7 @@ const meta = {
   },
   args: {
     label: 'ボタン表示名',
-    onClick: () => {console.log('onClick event');},
+    onClick: action('onClick event'),
   },
 } satisfies Meta<typeof Button>;
 

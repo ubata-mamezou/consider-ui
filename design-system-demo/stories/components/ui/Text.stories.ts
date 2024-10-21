@@ -13,7 +13,6 @@ const meta = {
   },
   args: {
     label: 'テキスト表示名',
-    // onFocus: () => { },
   },
 } satisfies Meta<typeof Text>;
 

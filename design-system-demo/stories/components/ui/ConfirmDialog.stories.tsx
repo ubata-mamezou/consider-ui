@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { ConfirmDialog } from '../../../src/components';
+import { action } from "@storybook/addon-actions";
 
 // metadata
 const meta = {
@@ -12,13 +13,13 @@ const meta = {
   argTypes: {
   },
   args: {
-    title: 'ダイアログタイトル',
-    contentText: 'ダイアログコンテンツテキスト',
+    title: '確認ダイアログタイトル',
+    contentText: '確認ダイアログコンテンツテキスト',
     executeKey: {id: '1', version: 0},
-    onClickExecute: () => console.log('onClick execution button'),
-    onClickCancel: () => console.log('onClick cancel button'),
+    onClickExecute: action('onClick execution button'),
+    onClickCancel: action('onClick cancel button'),
     openDialogCondition: true,
-    onCloseDialog: () => console.log('close dialog'),
+    onCloseDialog: action('close dialog'),
   },
 } satisfies Meta<typeof ConfirmDialog>;
 
