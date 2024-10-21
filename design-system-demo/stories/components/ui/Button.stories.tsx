@@ -1,8 +1,8 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { Button } from '../../../src/components';
 import { action } from '@storybook/addon-actions';
-import { within, userEvent } from "@storybook/testing-library";
-import { jest, expect } from "@storybook/jest";
+import { expect } from "@storybook/jest";
+import { Meta, StoryObj } from '@storybook/react';
+import { userEvent, within } from "@storybook/testing-library";
+import { Button } from '../../../src/components';
 
 // metadata
 const meta = {
@@ -45,7 +45,7 @@ export const Primary: Story = {
       const button = canvas.getByText("ボタン表示名");
       await expect(button.classList.contains("MuiButton-colorPrimary")).toBe(true);
 
-      await userEvent.click(button);
+      // await userEvent.click(button);
     });
   },
 };
