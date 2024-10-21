@@ -2,14 +2,30 @@
 
 UIの検証リポジトリです。
 
-* デザインシステム相当の大枠だけwiki作成
-* デザインシステム#コンポーネントライブラリを作成し、Pagesで公開
-* コンポーネントライブラリを利用したアプリを作成し、UIを構成
-
 ## アプリ構成
 
 * :file_folder:design-system-demo: [デザインシステム](./design-system-demo/README.md)
+  * 概要
+    * こんな風に表現すれば程度の大枠をwikiに作成
+  * デザイン原則
+    * こんな風に表現すれば程度の大枠をwikiに作成
+  * スタイルガイド
+    * Figmaへのリンクをwikiに掲載
+  * コンポーネントライブラリ
+    * コンポーネント実装
+    * ドキュメント作成（MDX）
+    * ストーリー実装（Storybook）
+      * ドキュメント自動生成
+      * インテグレーションテスト実装（interaction-test）
+      * ヴィジュアルテスト実装（T.B.D）
+    * ローカルビルド
+    * GitHub Pagesで公開
 * :file_folder:glossary: [UIコンポーネント利用アプリ](./glossary/README.md)
+  * コンポーネントライブラリのローカルインストール
+  * 画面: 一覧形式、単票形式
+  * 機能: CRUDあり
+  * APIの呼び出し: Fetchでモックサーバーを呼び出し（CRUDあり）
+  * テスト（T.B.D）
 * :file_folder:mock-server: [モックサーバー](./mock-server/README.md)
 
 ## 手順
