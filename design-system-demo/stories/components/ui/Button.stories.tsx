@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { expect } from "@storybook/jest";
 import { Meta, StoryObj } from '@storybook/react';
-import { userEvent, within } from "@storybook/testing-library";
+import { within } from "@storybook/testing-library";
 import { Button } from '../../../src/components';
 
 // metadata
