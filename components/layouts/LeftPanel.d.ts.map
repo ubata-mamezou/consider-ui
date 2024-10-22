@@ -1,1 +1,0 @@
-{"version":3,"file":"LeftPanel.d.ts","sourceRoot":"","sources":["../../../src/components/layouts/LeftPanel.tsx"],"names":[],"mappings":"AAEA,MAAM,MAAM,cAAc,GAAG;IAC3B,KAAK,EAAE;QAAE,KAAK,EAAE,MAAM,CAAC;QAAC,IAAI,EAAE,MAAM,CAAA;KAAE,EAAE,CAAC;CAC1C,CAAA;AAED,eAAO,MAAM,SAAS,eAEnB,cAAc,4CAiBhB,CAAC"}
