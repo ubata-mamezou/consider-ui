@@ -40,6 +40,14 @@ npm run build
 npm run storybook
 ```
 
+## インタラクションテスト
+
+インタラクションテストの実行は下記の通りです。  
+Chrome, firefoxのクロスブラウザテストが実行されるように設定しています。
+```sh
+npm run test-storybook
+```
+
 ## ビルド
 
 ビルド手順は以下の通りです。
