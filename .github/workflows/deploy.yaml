@@ -27,6 +27,11 @@ jobs:
         run: |
           cd design-system-demo
           npm ci
+      # test storybook(cross browser: chrome, firefox)
+      - name: Test storybook
+        run: |
+          cd design-system-demo
+          npm run test-storybook
       # build storybook static contents
       - name: Build storybook
         run: |
