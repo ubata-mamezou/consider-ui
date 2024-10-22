@@ -16,10 +16,12 @@ UIの検証リポジトリです。
     * ドキュメント作成（MDX）
     * ストーリー実装（Storybook）
       * ドキュメント自動生成
-      * インテグレーションテスト実装（interaction-test）
+      * インテグレーションテスト実装（interaction-test）※:warning: GitHub Pagesではエラーが発生してテストもドキュメントページも表示されなくなってしまうので、いったん、非活性
       * ヴィジュアルテスト実装（T.B.D）
     * ローカルビルド
     * GitHub Pagesで公開
+      * インテグレーションテスト実行
+      * ビルド
 * :file_folder:glossary: [UIコンポーネント利用アプリ](./glossary/README.md)
   * コンポーネントライブラリのローカルインストール
   * 画面: 一覧形式、単票形式

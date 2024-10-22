@@ -1,5 +1,6 @@
 design-system-demo/storybook-static
 mock-server/node_modules
+design-system-demo-bak
 
 #temp
 design-system-demo/src/components/layouts/VariableLayout.tsx
