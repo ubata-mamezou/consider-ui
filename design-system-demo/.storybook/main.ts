@@ -1,12 +1,12 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
+  // staticDirs: ['../public'], 
+  //ストーリーおよびMDXパス
   stories: [
-    // "../src/**/*.mdx", 
-    // "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    // documents
     "../docs/**/*.mdx", 
-    // "../docs/**/*.stories.@(js|jsx|mjs|ts|tsx)",
-    // "../stories/**/*.mdx", 
+    // stories
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
@@ -15,6 +15,9 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@chromatic-com/storybook",
     "@storybook/addon-interactions",
+    // "@storybook/addon-actions",
+    // "@storybook/addon-docs",
+    // "@storybook/addon-storyshots",
   ],
   framework: {
     name: "@storybook/react-vite",
