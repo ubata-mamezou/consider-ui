@@ -27,6 +27,7 @@ jobs:
         run: |
           cd design-system-demo
           npm ci
+          npx playwright install
       # test storybook(cross browser: chrome, firefox)
       - name: Test storybook
         run: |
