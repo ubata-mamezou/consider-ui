@@ -31,7 +31,7 @@ jobs:
       - name: Test storybook
         run: |
           cd design-system-demo
-          npm run test-storybook
+          npm run test-storybook:ci
       # build storybook static contents
       - name: Build storybook
         run: |
