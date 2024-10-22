@@ -2,6 +2,9 @@ import type { StorybookConfig } from "@storybook/react-vite";
 
 const config: StorybookConfig = {
   // staticDirs: ['../public'], 
+  // core: {
+  //   builder: 'vite', // builderとしてviteを明示
+  // },
   //ストーリーおよびMDXパス
   stories: [
     // documents
