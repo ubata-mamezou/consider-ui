@@ -12,7 +12,7 @@ export default defineConfig({
     dts({ insertTypesEntry: true }) // 型定義ファイルのエントリーポイントを作成
   ],
   // GitHub Pages用のベースパス //効果ない？
-  // base: '/consider-ui',
+  base: `${process.env.IMAGE_PATH_PREVIEW}`,
   // base: process.env.BUILD_ENV === 'preview' ?
   //   process.env.IMAGE_PATH_PREVIEW :
   //   process.env.IMAGE_PATH_DEV,
