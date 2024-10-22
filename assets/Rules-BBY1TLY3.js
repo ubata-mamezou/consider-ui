@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-Cw0GR0a5.js";import{useMDXComponents as e}from"./index-DSkyVWTJ.js";import"./index-CTjT7uj6.js";const r=""+new URL("Button.spec.size.drawio-ClWYujtR.png",import.meta.url).href,c=""+new URL("Button.usecase.style.drawio-DxTOQxHD.png",import.meta.url).href;function s(l){const i={h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...e(),...l.components};return n.jsxs(n.Fragment,{children:[n.jsx(i.h1,{id:"ボタン",children:"ボタン"}),`
+import{j as n}from"./jsx-runtime-QvZ8i92b.js";import{useMDXComponents as e}from"./index-FeUjBnvO.js";import"./index-uubelm5h.js";const r=""+new URL("Button.spec.size.drawio-ClWYujtR.png",import.meta.url).href,c=""+new URL("Button.usecase.style.drawio-DxTOQxHD.png",import.meta.url).href;function s(l){const i={h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",ul:"ul",...e(),...l.components};return n.jsxs(n.Fragment,{children:[n.jsx(i.h1,{id:"ボタン",children:"ボタン"}),`
 `,n.jsx(i.p,{children:`ボタンは、主にアクション実行またはページ遷移のためのトリガーとして使用します。
 画面内におけるボタンの重要度に応じて使い分け可能な複数のスタイルがあります。`}),`
 `,n.jsx(i.h2,{id:"仕様",children:"仕様"}),`
