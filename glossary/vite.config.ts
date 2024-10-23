@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 import { defineConfig } from 'vite'
 // import {resolve} from 'node:path'
-import {resolve} from 'path'
 // import { fileURLToPath, URL } from "node:url";
 
 // https://vitejs.dev/config/
