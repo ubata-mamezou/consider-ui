@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
-// import { expect } from "@storybook/jest";
+import { expect } from "@storybook/jest";
 import { Meta, StoryObj } from '@storybook/react';
-// import { within } from "@storybook/testing-library";
+import { within } from "@storybook/testing-library";
 import { Button } from '../../../src/components';
 
 // metadata
@@ -37,15 +37,15 @@ export const Primary: Story = {
   },
   args: {
   },
-  // play: async ({ canvasElement, step }) => {
-  //   await step("ボタンにLabelの文字列が表示されている", async () => {
-  //     const canvas = within(canvasElement);
-  //     await expect(canvas.getByText("ボタン表示名")).toBeInTheDocument();
+  play: async ({ canvasElement, step }) => {
+    await step("ボタンにLabelの文字列が表示されている", async () => {
+      const canvas = within(canvasElement);
+      const button = canvas.getByText("ボタン表示名");
 
-  //     const button = canvas.getByText("ボタン表示名");
-  //     await expect(button.classList.contains("MuiButton-colorPrimary")).toBe(true);
-  //   });
-  // },
+      await expect(canvas.getByText("ボタン表示名")).toBeInTheDocument();
+      await expect(button.classList.contains("MuiButton-colorPrimary")).toBe(true);
+    });
+  },
 };
 
 export const Secondary: Story = {

@@ -1,5 +1,12 @@
+import { expect } from '@storybook/jest';
 import { Meta, StoryObj } from '@storybook/react';
+import { userEvent, within } from '@storybook/testing-library';
 import { Text } from '../../../src/components';
+
+// const
+const labelText = 'テキスト表示名';
+const defaultTextValue = 'テキスト初期値';
+const helperText = 'テキストヘルパーテキスト';
 
 // metadata
 const meta = {
@@ -7,12 +14,15 @@ const meta = {
   component: Text,
   parameters: {
     layout: 'centered',
+    docs: {
+      subtitle: 'テキストコンポーネント',
+    }
   },
   tags: ['autodocs'],
   argTypes: {
   },
   args: {
-    label: 'テキスト表示名',
+    label: labelText,
   },
 } satisfies Meta<typeof Text>;
 
@@ -21,6 +31,34 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // story
+export const it: Story = {
+  tags: ['!autodocs'], //autodocsから除外
+  name: 'インタラクションテスト試行',
+  args: {
+    defaultValue: defaultTextValue,
+    helperText: helperText
+  },
+  play: async ({ canvasElement, step }) => {
+    const canvas = within(canvasElement);
+    const text = await canvas.getByRole(`textbox`);
+    // const text = canvas.findByLabelText(labelText);
+    const textValue = 'テキスト値';
+
+    await step('初期状態をアサーション', async () => {
+      await expect(text).toBeInTheDocument();
+    });
+
+    await step('値を設定', async () => {
+      await userEvent.clear(text);
+      await userEvent.type(text, textValue);
+    });
+
+
+    // await expect(canvas.findByDisplayValue(textValue)).toBeInTheDocument();
+
+  }
+};
+
 export const basicText: Story = {
   name: '通常',
   parameters: {
@@ -31,8 +69,8 @@ export const basicText: Story = {
     },
   },
   args: {
-    defaultValue: 'テキスト初期値',
-    helperText: 'テキストヘルパーテキスト'
+    defaultValue: defaultTextValue,
+    helperText: helperText
   },
 };
 
