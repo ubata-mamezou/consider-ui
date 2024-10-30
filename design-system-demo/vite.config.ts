@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 import dts from 'vite-plugin-dts'; // 型定義ファイルを生成するプラグイン
 import path  from "path";
 // import reactPlugin from '@vitejs/plugin-react-swc'
+// import { coverageConfigDefaults } from "vitest/config";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -34,4 +35,16 @@ export default defineConfig({
       },
     },
   },
+  root: './',
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, "src"),
+    }
+  },
+  //テストカバレッジの集計から除外
+  // test: {
+  //   exclude: [
+  //     ...coverageConfigDefaults.exclude,
+  //   ]
+  // },
 });

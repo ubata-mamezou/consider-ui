@@ -48,6 +48,7 @@ export type TextProps = {
 
 /**
  * テキスト
+ * 
  * @param param0 各種パラメーター
  * @returns テキスト
  */

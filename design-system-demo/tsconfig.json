@@ -10,6 +10,12 @@
   //   }
   // ],
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    },
     "declaration": true, // 型定義ファイルを生成
     "declarationMap": true,
     "declarationDir": "dist", // 型定義ファイルを出力するディレクトリを指定
