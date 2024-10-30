@@ -26,6 +26,10 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
+  docs: {
+    // defaultName: 'デザインシステムサンプル', //	自動生成されたドキュメントページの名前（最初に生成されたドキュメントのタイトルしか変わらないから使えない）
+    docsMode: false, //ドキュメントモード（true:ドキュメントだけ表示するモード。ストーリーは表示されなくなる。, false:デフォルト)
+  },
 };
 
 export default config;
